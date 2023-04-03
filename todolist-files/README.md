@@ -1,5 +1,5 @@
 # Todolist
-%(#FF00FF)[**A test single-page browser application created with MikeAngelo37 - a to-do list with basic functions: adding, marking as completed, and deleting items.**]
+%(#FF00FF)[A test single-page browser application created with MikeAngelo37 - a to-do list with basic functions: adding, marking as completed, and deleting items.]
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
 ## Development server
