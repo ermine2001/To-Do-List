@@ -1,0 +1,26 @@
+<html>
+<h1 style="text-align: center" > To-do list </h1>
+<body style="background-color:lightskyblue">
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-3">
+      <div class="input-group mb-3">
+        <input type="text"  class="form-control" placeholder="zadanie do zrobienia" aria-label="zadanie do zrobienia" aria-describedby="button-addon2" [(ngModel)]="newTodo">
+        <button class="btn btn-outline-secondary btn-primary" type="button" id="button-addon2" style="color: whitesmoke" (click)="savetodo()"> dodaj do listy</button>
+      </div>
+      <table   class="table table-striped">
+
+        <tbody>
+        <tr *ngFor="let todo of todos; let i = index;">
+          <th scope="row">{{i+1}}</th>
+          <td class="{{(todo.isDone)?'done':''}}" (click)="done(i)">{{todo.name}} </td>
+          <td style="color: orangered" (click)="delete(i)">usuń </td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>
